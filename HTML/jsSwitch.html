@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Light Switch</title>
+        <link rel="icon" href="https://jooinn.com/images/isolated-light-bulb-1.jpg">
+    </head>
+    <body>
+        <h1>JavaScript Switch</h1>
+        <p>Here, a Javascript changes the value of the src (source) attribute of an image.</p>
+        <script>
+            function light(sw){
+                var pic;
+                if(sw==0){
+                    pic="https://image.emojisky.com/101/1707101-middle.png";
+                } else {
+                    pic="https://webvn.com/wp-content/uploads/2015/08/pic_bulbon.gif";
+                }
+                document.getElementById('myImage').src=pic;
+            }
+        </script>
+        <img id="myImage" src="https://image.emojisky.com/101/1707101-middle.png"
+        width="150" height="180">
+        <p>
+            <button type="button"
+            onclick="light(1)">Light On</button>
+            <button type="button"
+            onclick="light(0)">Light Off</button>
+        </p>
+    </body>
+</html>

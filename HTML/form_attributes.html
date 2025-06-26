@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html>
+    <style>
+    </style>
+    <body>
+        <h1>The input form attributes</h1>
+        <p>The form attribute specifies the form an 
+        input elements belongs to.</p>
+        <form action="/abc.php" id="form1">
+            <label for="fname">First name: </label>
+            <input type="text" id="fname" name="fname"><br><br>
+            <input type="submit" value="Submit">
+        </form>
+        <p>The "Last name" field below is outside the form element, 
+            but still part of the form.
+        </p>
+        <label for="lname">Last name: </label>
+        <input type="text" id="lname" name="lname" form="form1">
+        <h2>Formaction attribute</h2>
+        <input type="submit" formaction="/def.php" value="Submit as admin">
+    </body>
+</html>

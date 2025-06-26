@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>form</title>
+    <style>
+    </style>
+</head>
+<body>
+    <form action="/action_page.php" novalidate>
+        <fieldset>
+            <legend>Personalia:</legend>
+        <label for="fname">First name:</label><br>
+        <input type="text" id="fname" name="fname"><br>
+        <label for="lname">Last name:</label><br>
+        <input type="text" id="lname" name="lname"><br>
+        <input type="submit" value="Submit" style="margin-top:10px;">
+        </fieldset>
+    </form>
+    <p>If you click the "Submit" button, 
+        the form-data will be sent to a page 
+        called "/action_page.php".
+    </p>
+    <h2>Radio Buttons</h2>
+    <p>Choose your favourite Web language:
+        <form>
+            <input type="radio" id="html" name="fav_lang">
+            <label for="html">HTML</label><br>
+            <input type="radio" id="css" name="fav_lang">
+            <label for="css">CSS</label><br>
+            <input type="radio" id="js" name="fav_lang">
+            <label for="js">JavaScript</label><br>
+        </form>
+    </p>
+    <h2>The DataList Item</h2>
+    <p>The datalist element specifies a list of 
+        pre-defined options for an input element.
+    </p>
+    <form action="/actio_page.php">
+        <input list="Browsers" name="Browser" placeholder="browser">
+        <datalist id="Browsers">
+            <option value="Edge"></option>
+            <option value="Firefox"></option>
+            <option value="Chrome"></option>
+            <option value="Opera"></option>
+        </datalist>
+    </form>
+</body>
+</html>

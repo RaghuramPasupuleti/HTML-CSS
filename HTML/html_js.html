@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html>
+    <body>
+        <h1>My First Javascript</h1>
+        <button type="button"
+        onclick="document.getElementById('demo').innerHTML=Date()"
+        >Click on the button to know the current time and date</button>
+        <p id="demo"></p>
+
+        <h2>Use Javascript to change Text</h2>
+        <p>This example writes "Hello Javascript!" into an HTML element
+             with id="demo1"</p>
+             <p id="demo1"></p>
+             <script>
+                document.getElementById("demo1").innerHTML="Hello Javascript!";
+
+             </script>
+        
+        <p>Javascript can change the content of an HTML element:</p>
+        <button type="button" onclick="myFunction()">Click Me!</button>
+        <p id="demo2">This is a demonstration.</p>
+        <script>
+            function myFunction(){
+                document.getElementById("demo").innerHTML="Hello Javascript!";
+            }
+        </script>
+
+        <h1>My Second Javascript</h1>
+        <p id="demo4">Javascript can change the style 
+            of an HTML element 
+        </p>
+        
+
+        <script>
+            function myFunction1(){
+            document.getElementById("demo4").style.fontSize="25px";
+            document.getElementById("demo4").style.background="red";
+            document.getElementById("demo4").style.color="yellow";
+            }
+        </script>
+        <button type="button" onclick="myFunction1()">Click Me</button>
+        <hr>
+        <h1>My Example Javascript</h1>
+        <p id="example">This is the content that change when you click 
+            on that button. 
+        </p>
+        <script>
+            function exp(){
+                document.getElementById("example").innerHTML="Hello, Raghuram!";
+            }
+        </script>
+        <button type="button" onclick="exp()">try it</button>
+    </body>
+</html>
